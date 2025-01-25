@@ -1,0 +1,55 @@
+
+input {
+    outline: none;
+}
+
+.auth-form {
+    margin: auto;
+    width: 700px;
+    height: auto;
+    text-align: center;
+    border: 1px solid #2222c7;
+    border-radius: 10px;
+    margin-top: 200px;
+    padding: 20px;
+
+    .answer_auth {
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .auth-input {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .auth-input:hover {
+        outline: none !important;
+    }
+
+
+    .auth-input:focus {
+        outline: none !important;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .auth-form {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 700px) {
+    .auth-form {
+        margin: auto;
+        width: 700px;
+        height: auto;
+        text-align: center;
+        border: 1px solid #2222c7;
+        border-radius: 10px;
+        margin-top: 100px;
+        padding: 20px;
+    }
+}
