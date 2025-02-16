@@ -13,7 +13,7 @@ Route::group(['prefix' => '/index', 'middleware' => 'auth'], function () {
             ->name('user.change.time');
 
         Route::get('/report/{user}', [\App\Http\Controllers\HomeController::class, 'report'])
-            ->name('user.report');
+            ->name('user.report')->middleware('check_time');
 
         Route::get('/show/{user}', [\App\Http\Controllers\HomeController::class, 'show'])
             ->name('user.show');
